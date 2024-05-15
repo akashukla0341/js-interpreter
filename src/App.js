@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import EventLoop from './components/EventLoop';
+import './App.css'
 
-function App() {
+
+const App = () => {
+ 
+
+//   const codeString = `$.on('button', 'click', function onClick() {
+//     setTimeout(function timer() {
+//         console.log('You clicked the button!');    
+//     }, 2000);
+// });&
+
+// console.log("Hi!");&
+
+// setTimeout(function timeout() {
+//     console.log("Click the button!");
+// }, 5000);&
+
+// console.log("Welcome to loupe.");`;
+
+// Remove line breaks and split by semicolons to create a single array
+// const codeArray = codeString.split('&');
+
+// // Display the resulting array
+// console.log(codeArray);
+
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+       <div style={{backgroundColor:"#374151",color:"white", marginBottom:"10px",marginTop:"5px"}} className='p-3 brand'>⚒ JS-INT</div>
+       <EventLoop />
+     
+    </>
   );
 }
 
